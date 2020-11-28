@@ -168,37 +168,37 @@ UIImage * markeImageWithImageByPostion(UIImage *image, UIImage * waterImage, Mar
     switch (position) {
         case TopLeft:
             rect = (CGRect){
-                CGPointMake(20, 20),
+                CGPointMake(0, 0),
                 size
             };
             break;
         case TopCenter:
             rect = (CGRect){
-                CGPointMake((w-(size.width))/2, 20),
+                CGPointMake((w-(size.width))/2, 0),
                 size
             };
             break;
         case TopRight:
             rect = (CGRect){
-                CGPointMake((w-size.width-20), 20),
+                CGPointMake((w-size.width-0), 0),
                 size
             };
             break;
         case BottomLeft:
             rect = (CGRect){
-                CGPointMake(20, h-size.height-20),
+                CGPointMake(0, h-size.height-0),
                 size
             };
             break;
         case BottomCenter:
             rect = (CGRect){
-                CGPointMake((w-(size.width))/2, h-size.height-20),
+                CGPointMake((w-(size.width))/2, h-size.height-0),
                 size
             };
             break;
         case BottomRight:
             rect = (CGRect){
-                CGPointMake(w-(size.width), h-size.height-20),
+                CGPointMake(w-(size.width), h-size.height-0),
                 size
             };
             break;
@@ -210,7 +210,7 @@ UIImage * markeImageWithImageByPostion(UIImage *image, UIImage * waterImage, Mar
             break;
         default:
             rect = (CGRect){
-                CGPointMake(20, 20),
+                CGPointMake(0, 0),
                 size
             };
             break;
@@ -241,7 +241,7 @@ UIImage * markerImgWithTextByPostion    (UIImage *image, NSString* text, MarkerP
     UIGraphicsBeginImageContextWithOptions(image.size, NO, scale);
     [image drawInRect:CGRectMake(0, 0, w, h)];
 
-    int margin = 20;
+    int margin = 0;
     int posX = margin;
     int posY = margin;
 
